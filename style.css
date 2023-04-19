@@ -1,0 +1,53 @@
+body {
+  margin-left: 30px;
+}
+.labeldose {
+  padding-right: 15%;
+}
+.text1 {
+  color: rgb(101, 58, 5);
+  text-decoration: underline;
+}
+.text2 {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  font-weight: bold;
+}
+.text3 {
+  color: rgb(207, 7, 7);
+  text-decoration: underline;
+  font-weight: bold;
+}
+.labelid {
+  padding-right: 20%;
+}
+.labelno {
+  padding-right: 20%;
+}
+select {
+  width: 150px;
+  height: 20px;
+  box-sizing: border-box;
+}
+.QA {
+  color: rgb(86, 8, 8);
+}
+.labelday {
+  padding-right: 15%;
+}
+.big {
+  border: 1px solid lightgray;
+  width: 700px;
+}
+.big1 {
+  border: 1px solid lightgray;
+  width: 700px;
+  background-color: rgb(251, 240, 190);
+}
+.box {
+  border: 1px;
+  width: 400px;
+}
+.sub {
+  text-align: center;
+}

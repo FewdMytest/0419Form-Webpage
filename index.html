@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h3>COVID-19 Vaccination Programme - Booking System</h3>
+      <hr />
+    </header>
+    <from>
+      <div class="dose">
+        <label for="dose" class="labeldose"
+          >Please select the dose of vaccination:</label
+        >
+        <select id="dose" name="dose">
+          <option value="1st dose">1st dose</option>
+          <option value="2nd dose">2nd dose</option>
+          <option value="3rd dose">3rd dose</option>
+          <option value="4th dose">4th dose</option>
+          <option value="5th dose">5th dose</option>
+        </select>
+      </div>
+
+      <div class="text1">
+        <p>Please fill in all fields</p>
+      </div>
+
+      <div class="idtype">
+        <label for="id type" class="labelid">Identity document type: </label>
+        <select id="id type" name="id type">
+          <option value="1Hong Kong Identity Card">
+            Hong Kong Identity Card
+          </option>
+          <option value="Hong Kong Passport">Hong Kong Passport</option>
+        </select>
+        <p>
+          For Hong Kong residents not holding any of the above, please refer to
+          <a href="QA" class="QA">Question no. 87 od FAQs</a>
+        </p>
+      </div>
+
+      <div class="idno">
+        <label for="id no" class="labelno">Identity document number: </label>
+        <input id="id no" type="text" placeholder="e.g.A123456" />
+        (<input
+          id="id no"
+          type="text"
+          placeholder="7"
+          style="width: 20px; height: 20px"
+        />)
+        <p></p>
+      </div>
+
+      <div class="daybirth">
+        <label for="day" class="labelday"
+          >Date of birth on Identity doccument:
+        </label>
+        <select id="day" name="day">
+          <option disabled selected>Day</option>
+          <option value="19">19th</option>
+        </select>
+
+        <select id="month" name="month">
+          <option disabled selected>Month</option>
+          <option value="1">January</option>
+        </select>
+
+        <select id="year" name="year">
+          <option disabled selected>year</option>
+          <option value="1995">1995</option>
+        </select>
+        <p>
+          (If there is no complete date of birth on identity document, please
+          select "Not Applicable" in the corresponding data field.)
+        </p>
+      </div>
+
+      <div class="day2">
+        <label for="day1" class="labelday"
+          >The date of your third dose vaccination:
+        </label>
+        <select id="day1" name="day1">
+          <option disabled selected>Day</option>
+          <option value="19">19th</option>
+        </select>
+
+        <select id="month" name="month">
+          <option disabled selected>Month</option>
+          <option value="1">January</option>
+        </select>
+
+        <select id="year" name="year">
+          <option disabled selected>year</option>
+          <option value="2022">2022</option>
+        </select>
+        <p></p>
+      </div>
+
+      <div>
+        <label for="Group">Eligibility Group: </label>
+        <br />
+        <a href="#" style="color: brown">Details</a>
+
+        <div class="big">
+          <p class="text2">If you have not been infected with COVID-19:</p>
+          <p style="text-decoration: underline">
+            Interval between 3rd and 4rd dose is at least 90 days
+          </p>
+
+          <div>
+            <input id="im_indi" name="eli_gp" type="radio" />
+            <label for="im_indi"
+              >Immunocompromised individuals (Immunocompromised medical
+              certificte required as proof)</label
+            >
+          </div>
+
+          <div>
+            <input id="above_49" name="eli_gp" type="radio" />
+            <label for="above_49">Persons aged 50 or above</label>
+          </div>
+
+          <p>Interval between 3rd and 4th dose is at least 180 days</p>
+          <div>
+            <input id="18_to_49" name="eli_gp" type="radio" />
+            <label for="18_to_49">Persons aged 18 to 49</label>
+          </div>
+        </div>
+      </div>
+      <p></p>
+      <div class="big1">
+        <p class="text3">If you are COVID-19 recovered persons ^:</p>
+        <p style="color: red">
+          ^ For COVID-19 recovered persons, please refer to the "Factshhet on
+          COVID-19 Vaccination for Persons with Prior COVID-19 Infection"
+          <a href="#" style="color: brown">Here</a> for the vaccination
+          arrangement before booking.
+        </p>
+
+        <p><u>Interval between 3rd and 4th dose is at least 90 days</u></p>
+
+        <div>
+          <input id="a" name="covidcover" type="radio" />
+          <label for="a"
+            >Recovered persons aged 18 years or above, who belong to
+            immunocompromised individuals (at least 90 days after recovery)
+            (medical certificte required as proof)</label
+          >
+        </div>
+
+        <p><u>Interval between 3rd and 4th dose is at least 180 days</u></p>
+        <div>
+          <input id="b" name="covidcover" type="radio" />
+          <label for="b"
+            >Recovered persons aged 18 years or above (at least 180 days after
+            recover)</label
+          >
+        </div>
+      </div>
+
+      <div class="last">
+        <div class="box">
+          <p>Choose the vaccine for your fouth dose:</p>
+          <p style="color: red">
+            Remark: Non-immunocompromised recovered persons aged 17or below are
+            not recommented to receive the 4th dose of vaccination.
+          </p>
+        </div>
+
+        <div class="box2">
+          <div>
+            <input type="radio" id="biontech_c" name="vaccine" />
+            <label for="biontech_c"
+              >BioNTech/Fosun [Comirnaty](Aged 6 months or Above Only<span
+                class="red"
+                >*</span
+              >)</label
+            >
+          </div>
+
+          <div>
+            <input type="radio" id="sinovac" name="vaccine" />
+            <label for="sinovac"
+              >Sinovac(Aged 6 months or Above Only<span class="red">*</span
+              >)</label
+            >
+          </div>
+
+          <div>
+            <input type="radio" id="biontech_cb" name="vaccine" />
+            <label for="biontech_cb"
+              >BioNTech/Fosun [Comirnaty Bivalent#](Aged 18 years or above, or
+              immunocompromised uninfected persons aged 12 or above Only)</label
+            >
+          </div>
+        </div>
+
+        <p>
+          #For inforamtion receiving Comirnaty bivalent vaccine, please refer to
+          "<a style="color: brown"
+            >Supplementary notes on use of Comirnaty Bivalent Vaccine"</a
+          >
+        </p>
+      </div>
+
+      <div class="sub">
+        <input type="submit" id="summit" name="summit" value="Summit" />
+      </div>
+    </from>
+  </body>
+</html>
